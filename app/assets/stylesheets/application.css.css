@@ -10,6 +10,7 @@ Error: File to import not found or unreadable: bootstrap-sprockets.
 16: @import "bootstrap-sprockets";
 17: @import "bootstrap";
 18: @import "main.css.css";
+19: @import "lightbox.css";
 
 Backtrace:
 /home/ubuntu/workspace/rGalleryr/app/assets/stylesheets/application.css.scss:16
@@ -55,4 +56,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: bootstrap-sprockets.\A         on line 16 of /home/ubuntu/workspace/rGalleryr/app/assets/stylesheets/application.css.scss\A \A 11:  * It is generally better to create a new file per style scope.\A 12:  *\A 13:  *= require_self\A 14: */\A 15:  \A 16: @import \"bootstrap-sprockets\";\A 17: @import \"bootstrap\";\A 18: @import \"main.css.css\";"; }
+  content: "Error: File to import not found or unreadable: bootstrap-sprockets.\A         on line 16 of /home/ubuntu/workspace/rGalleryr/app/assets/stylesheets/application.css.scss\A \A 11:  * It is generally better to create a new file per style scope.\A 12:  *\A 13:  *= require_self\A 14: */\A 15:  \A 16: @import \"bootstrap-sprockets\";\A 17: @import \"bootstrap\";\A 18: @import \"main.css.css\";\A 19: @import \"lightbox.css\";"; }
