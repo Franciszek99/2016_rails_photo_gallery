@@ -18,7 +18,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="#">RailsCMS</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -28,8 +28,8 @@
            <% end %>
           </ul>
           <ul class="nav navbar-nav pull-right">
-              <li><a href="#">Upload Photo</a></li>
-              <li><a href="#">Add Category</a><li>
+              <li><%= link_to "Upload Photo", upload_path %></li>
+              <li><%= link_to "Add Category", new_category_path %><li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -38,6 +38,12 @@
     
     </section>
       <div class="container">
+        <% if flash[:notice] %>
+          <div class="alert alert-succes"><%= flash[:notice] %></div>
+        <%end%>
+        <% if flash[:alert] %>
+          <div class="alert alert-danger"><%= flash[:alert] %></div>
+        <%end%>
          <%= yield %>
       </div><!-- /.container -->
     </section>
